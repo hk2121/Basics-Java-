@@ -1,0 +1,19 @@
+package Functions;
+
+import java.util.Scanner;
+
+public class Age {
+
+    public static boolean isEligible(int age) {
+        if (age > 18) {
+            return true;
+        }
+        return false;
+    } 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        System.out.println("You are an adult "+isEligible(age));
+    }
+}
